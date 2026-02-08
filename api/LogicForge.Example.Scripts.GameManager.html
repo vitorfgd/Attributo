@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class GameManager | LogicForge documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class GameManager | LogicForge documentation ">
+    
+    <meta name="description" content="The central singleton manager for the level execution context.">
+      <link rel="shortcut icon" href="../public/favicon.svg">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../public/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LogicForge.Example.Scripts.GameManager">
+
+
+
+  <h1 id="LogicForge_Example_Scripts_GameManager" data-uid="LogicForge.Example.Scripts.GameManager" class="text-break">Class GameManager</h1>
+  <div class="markdown level0 summary"><p>The central singleton manager for the level execution context.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">GameManager</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LogicForge.html">LogicForge</a>.<a class="xref" href="LogicForge.Example.html">Example</a>.<a class="xref" href="LogicForge.Example.Scripts.html">Scripts</a></h6>
+  <h6><strong>Assembly</strong>: LogicForgeExample.dll</h6>
+  <h5 id="LogicForge_Example_Scripts_GameManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GameManager : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="LogicForge_Example_Scripts_GameManager_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>
+The <a class="xref" href="LogicForge.Example.Scripts.GameManager.html">GameManager</a> class acts as the "God Object" for the current puzzle level. Its responsibilities include:
+<ul><li>Maintaining a registry of all blocks via a coordinate dictionary.</li><li>Managing the global game state (Win/Fail conditions).</li><li>Interfacing with the <a class="xref" href="LogicForge.IDE.CodeRunner.html">CodeRunner</a> to reset the board when code execution restarts.</li></ul>
+
+</div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_Instance.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.Instance%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L42">View Source</a>
+  </span>
+  <h4 id="LogicForge_Example_Scripts_GameManager_Instance" data-uid="LogicForge.Example.Scripts.GameManager.Instance">Instance</h4>
+  <div class="markdown level1 summary"><p>Global singleton access to the active Stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static GameManager Instance</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Example.Scripts.GameManager.html">GameManager</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_OnFail.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.OnFail%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L32">View Source</a>
+  </span>
+  <h4 id="LogicForge_Example_Scripts_GameManager_OnFail" data-uid="LogicForge.Example.Scripts.GameManager.OnFail">OnFail</h4>
+  <div class="markdown level1 summary"><p>Event invoked when the player fails the stage (e.g., hits an enemy).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnFail</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_OnSuccess.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.OnSuccess%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L27">View Source</a>
+  </span>
+  <h4 id="LogicForge_Example_Scripts_GameManager_OnSuccess" data-uid="LogicForge.Example.Scripts.GameManager.OnSuccess">OnSuccess</h4>
+  <div class="markdown level1 summary"><p>Event invoked when the player reaches the goal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public UnityEvent OnSuccess</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">UnityEvent</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_Player.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.Player%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L37">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_Player_" data-uid="LogicForge.Example.Scripts.GameManager.Player*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_Player" data-uid="LogicForge.Example.Scripts.GameManager.Player">Player</h4>
+  <div class="markdown level1 summary"><p>Gets the active player instance for this stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public PlayerController Player { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Example.Scripts.PlayerController.html">PlayerController</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_GetBlock_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.GetBlock(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L111">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_GetBlock_" data-uid="LogicForge.Example.Scripts.GameManager.GetBlock*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_GetBlock_UnityEngine_Vector2Int_" data-uid="LogicForge.Example.Scripts.GameManager.GetBlock(UnityEngine.Vector2Int)">GetBlock(Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Retrieves the block located at the specific grid coordinates.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public BaseBlock GetBlock(Vector2Int coord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2Int</span></td>
+        <td><span class="parametername">coord</span></td>
+        <td><p>The (X, Y) coordinates to query.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Example.Scripts.Blocks.BaseBlock.html">BaseBlock</a></td>
+        <td><p>The <a class="xref" href="LogicForge.Example.Scripts.Blocks.BaseBlock.html">BaseBlock</a> at the location, or null if empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_IsInside_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.IsInside(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L120">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_IsInside_" data-uid="LogicForge.Example.Scripts.GameManager.IsInside*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_IsInside_UnityEngine_Vector2Int_" data-uid="LogicForge.Example.Scripts.GameManager.IsInside(UnityEngine.Vector2Int)">IsInside(Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Validates if the given coordinate is within the map boundaries.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsInside(Vector2Int coord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2Int</span></td>
+        <td><span class="parametername">coord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_IsWalkable_UnityEngine_Vector2Int_.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.IsWalkable(UnityEngine.Vector2Int)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L129">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_IsWalkable_" data-uid="LogicForge.Example.Scripts.GameManager.IsWalkable*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_IsWalkable_UnityEngine_Vector2Int_" data-uid="LogicForge.Example.Scripts.GameManager.IsWalkable(UnityEngine.Vector2Int)">IsWalkable(Vector2Int)</h4>
+  <div class="markdown level1 summary"><p>Checks if a coordinate contains a block and if that block is traversable.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsWalkable(Vector2Int coord)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2Int</span></td>
+        <td><span class="parametername">coord</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_LinkTeleporters_LogicForge_Example_Scripts_MapConfiguration_.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.LinkTeleporters(LogicForge.Example.Scripts.MapConfiguration)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L156">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_LinkTeleporters_" data-uid="LogicForge.Example.Scripts.GameManager.LinkTeleporters*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_LinkTeleporters_LogicForge_Example_Scripts_MapConfiguration_" data-uid="LogicForge.Example.Scripts.GameManager.LinkTeleporters(LogicForge.Example.Scripts.MapConfiguration)">LinkTeleporters(MapConfiguration)</h4>
+  <div class="markdown level1 summary"><p>Connects Teleportation blocks by finding 'T' (Start) and 't' (End) markers in the map config.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LinkTeleporters(MapConfiguration config)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Example.Scripts.MapConfiguration.html">MapConfiguration</a></td>
+        <td><span class="parametername">config</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_RegisterBlock_LogicForge_Example_Scripts_Blocks_BaseBlock_.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.RegisterBlock(LogicForge.Example.Scripts.Blocks.BaseBlock)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L100">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_RegisterBlock_" data-uid="LogicForge.Example.Scripts.GameManager.RegisterBlock*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_RegisterBlock_LogicForge_Example_Scripts_Blocks_BaseBlock_" data-uid="LogicForge.Example.Scripts.GameManager.RegisterBlock(LogicForge.Example.Scripts.Blocks.BaseBlock)">RegisterBlock(BaseBlock)</h4>
+  <div class="markdown level1 summary"><p>Adds a block to the internal coordinate dictionary.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterBlock(BaseBlock block)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Example.Scripts.Blocks.BaseBlock.html">BaseBlock</a></td>
+        <td><span class="parametername">block</span></td>
+        <td><p>The block instance to register.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_RegisterPlayer_LogicForge_Example_Scripts_PlayerController_.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.RegisterPlayer(LogicForge.Example.Scripts.PlayerController)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L83">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_RegisterPlayer_" data-uid="LogicForge.Example.Scripts.GameManager.RegisterPlayer*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_RegisterPlayer_LogicForge_Example_Scripts_PlayerController_" data-uid="LogicForge.Example.Scripts.GameManager.RegisterPlayer(LogicForge.Example.Scripts.PlayerController)">RegisterPlayer(PlayerController)</h4>
+  <div class="markdown level1 summary"><p>Registers the active player controller with the stage.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RegisterPlayer(PlayerController player)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Example.Scripts.PlayerController.html">PlayerController</a></td>
+        <td><span class="parametername">player</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_TriggerPlayerFailure.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.TriggerPlayerFailure%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L147">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_TriggerPlayerFailure_" data-uid="LogicForge.Example.Scripts.GameManager.TriggerPlayerFailure*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_TriggerPlayerFailure" data-uid="LogicForge.Example.Scripts.GameManager.TriggerPlayerFailure">TriggerPlayerFailure()</h4>
+  <div class="markdown level1 summary"><p>Ends the game session with a failure state, stopping code execution.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerPlayerFailure()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager_TriggerStageClear.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager.TriggerStageClear%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L138">View Source</a>
+  </span>
+  <a id="LogicForge_Example_Scripts_GameManager_TriggerStageClear_" data-uid="LogicForge.Example.Scripts.GameManager.TriggerStageClear*"></a>
+  <h4 id="LogicForge_Example_Scripts_GameManager_TriggerStageClear" data-uid="LogicForge.Example.Scripts.GameManager.TriggerStageClear">TriggerStageClear()</h4>
+  <div class="markdown level1 summary"><p>Ends the game session with a success state.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void TriggerStageClear()</code></pre>
+  </div>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Example_Scripts_GameManager.md&amp;value=---%0Auid%3A%20LogicForge.Example.Scripts.GameManager%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Example/Scripts/GameManager.cs/#L22" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      LogicForge documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

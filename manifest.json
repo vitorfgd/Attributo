@@ -1,0 +1,232 @@
+{
+  "source_base_path": "C:/Users/Vitor/Documents/Unity/Library/attributo-license-manager/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.LicenseDataEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.LicenseDataEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.LicenseDataEditor",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.LicenseDataEditor.yml\" sourcestartlinenumber=\"1\">Provides a custom inspector interface for the <xref href=\"Attributo.LicenseData\" data-throw-if-not-resolved=\"false\"></xref> ScriptableObject.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.LicenseHubWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.LicenseHubWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.LicenseHubWindow",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.LicenseHubWindow.yml\" sourcestartlinenumber=\"1\">The central administrative interface for the License Manager system.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.LicenseImportDetector.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.LicenseImportDetector.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.LicenseImportDetector",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.LicenseImportDetector.yml\" sourcestartlinenumber=\"1\">An automated background processor that monitors the Unity Asset Database for new imports.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.LicenseLinkEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.LicenseLinkEditor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.LicenseLinkEditor",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.LicenseLinkEditor.yml\" sourcestartlinenumber=\"1\">Custom inspector for the <xref href=\"Attributo.LicenseLink\" data-throw-if-not-resolved=\"false\"></xref> component.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.LicenseLinkEditorUtility.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.LicenseLinkEditorUtility.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.LicenseLinkEditorUtility",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.LicenseLinkEditorUtility.yml\" sourcestartlinenumber=\"1\">Editor-only utility for resolving effective license hierarchy for <xref href=\"Attributo.LicenseLink\" data-throw-if-not-resolved=\"false\"></xref>.\nUses the Asset Database to crawl the project folder hierarchy; safe for Editor only.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.LicenseSelectionWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.LicenseSelectionWindow.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.LicenseSelectionWindow",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.LicenseSelectionWindow.yml\" sourcestartlinenumber=\"1\">An interactive wizard used to assign licenses to project assets during or after import.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.SpdxInternalResponse.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.SpdxInternalResponse.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor.SpdxInternalResponse",
+      "Summary": "<p sourcefile=\"api/Attributo.Editor.SpdxInternalResponse.yml\" sourcestartlinenumber=\"1\">Represents the internal JSON structure used by the SPDX license registry API.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.Editor.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.Editor",
+      "Summary": null
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.LicenseData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.LicenseData.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.LicenseData",
+      "Summary": "<p sourcefile=\"api/Attributo.LicenseData.yml\" sourcestartlinenumber=\"1\">A ScriptableObject representing a single software or asset license.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.LicenseLink.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.LicenseLink.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo.LicenseLink",
+      "Summary": "<p sourcefile=\"api/Attributo.LicenseLink.yml\" sourcestartlinenumber=\"1\">A marker asset used to link specific folders to one or more <xref href=\"Attributo.LicenseData\" data-throw-if-not-resolved=\"false\"></xref> entries.</p>\n"
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Attributo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Attributo.html"
+        }
+      },
+      "version": "",
+      "Uid": null,
+      "IsMRef": true,
+      "Title": "Attributo",
+      "Summary": null
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        },
+        ".json": {
+          "relative_path": "api/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/README.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/README.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        },
+        ".json": {
+          "relative_path": "manual/toc.json"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        },
+        ".json": {
+          "relative_path": "toc.json"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

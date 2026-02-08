@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Attributo: Pro License Manager | Attributo: Pro License Manager Documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Attributo: Pro License Manager | Attributo: Pro License Manager Documentation ">
+    
+    
+      <link rel="shortcut icon" href="public/favicon.svg">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="public/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="attributo-pro-license-manager">Attributo: Pro License Manager</h1>
+
+<p><strong>Attributo</strong> is an Editor-only Unity tool that automates asset attribution and third-party license compliance. By linking folders to license data and tracking imports, it helps keep your project audit-ready and simplifies generating attribution documents (e.g. <code>ThirdPartyNotices.txt</code> or <code>CREDITS.md</code>).</p>
+<hr>
+<h2 id="features">Features</h2>
+<ul>
+<li><strong>Import-time prompts</strong> – When you add assets under an unlicensed folder, a wizard appears so you can assign or create licenses.</li>
+<li><strong>Hierarchical licensing</strong> – Place a <strong>License Link</strong> in a folder; that folder and its children inherit that license until overridden by another link deeper in the tree.</li>
+<li><strong>SPDX integration</strong> – Fetch official license text from <a href="https://spdx.org">SPDX</a> by entering an identifier (e.g. <code>MIT</code>, <code>Apache-2.0</code>) in the <strong>License Data</strong> inspector.</li>
+<li><strong>License Hub</strong> – Central window to audit all links and export a single attribution file with deduplicated license text and notes.</li>
+<li><strong>Mute folders</strong> – Optionally mark a folder as “no license needed” so the import detector does not prompt again for that path.</li>
+</ul>
+<hr>
+<h2 id="quick-links">Quick links</h2>
+<ul>
+<li><strong><a href="manual/">User manual</a></strong> – Setup, workflows, and troubleshooting (same content as the package README).</li>
+<li><strong><a href="api/">Scripting API</a></strong> – API reference for the <code>Attributo</code> and <code>Attributo.Editor</code> assemblies.</li>
+</ul>
+<hr>
+<h2 id="technical-note">Technical note</h2>
+<p>Attributo is <strong>Editor-only</strong>. The Runtime assembly (<code>Attributo</code>) contains only data types (<code>LicenseData</code>, <code>LicenseLink</code>). All hierarchy resolution and Asset Database usage live in the Editor assembly (<code>Attributo.Editor</code>), so the package has no impact on player builds or build size.</p>
+<hr>
+<h2 id="legal-disclaimer">Legal disclaimer</h2>
+<p>Attributo is an organizational aid and does <strong>not</strong> constitute legal advice. You are responsible for verifying that all assets are correctly attributed and that license terms are followed. Always review exported attribution files before shipping.</p>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitorfgd/attributo-license-manager/blob/main/Documentation/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Attributo: Pro License Manager Documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

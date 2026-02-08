@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Struct VariableValue | LogicForge documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Struct VariableValue | LogicForge documentation ">
+    
+    <meta name="description" content="A serializable wrapper acting as a discriminated union for Unity-supported primitive types.">
+      <link rel="shortcut icon" href="../public/favicon.svg">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../public/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LogicForge.Variables.VariableValue">
+
+
+
+  <h1 id="LogicForge_Variables_VariableValue" data-uid="LogicForge.Variables.VariableValue" class="text-break">Struct VariableValue</h1>
+  <div class="markdown level0 summary"><p>A serializable wrapper acting as a discriminated union for Unity-supported primitive types.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LogicForge.html">LogicForge</a>.<a class="xref" href="LogicForge.Variables.html">Variables</a></h6>
+  <h6><strong>Assembly</strong>: LogicForge.dll</h6>
+  <h5 id="LogicForge_Variables_VariableValue_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Serializable]
+public struct VariableValue</code></pre>
+  </div>
+  <h5 id="LogicForge_Variables_VariableValue_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>Unity's serializer does not support polymorphism or 'object' fields natively without complex workarounds.
+This struct exposes explicit fields for all supported types, using the <a class="xref" href="LogicForge.Variables.VariableValue.html#LogicForge_Variables_VariableValue_Type">Type</a> field
+to determine which field is currently active/valid.</p>
+</div>
+  <h3 id="fields">Fields
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_BoolValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.BoolValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L52">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_BoolValue" data-uid="LogicForge.Variables.VariableValue.BoolValue">BoolValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for Boolean values.&quot;)]
+public bool BoolValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_FloatValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.FloatValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L46">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_FloatValue" data-uid="LogicForge.Variables.VariableValue.FloatValue">FloatValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for Float values.&quot;)]
+public float FloatValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">float</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_GameObjectValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.GameObjectValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L61">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_GameObjectValue" data-uid="LogicForge.Variables.VariableValue.GameObjectValue">GameObjectValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for GameObject references.&quot;)]
+public GameObject GameObjectValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">GameObject</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_IntegerValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.IntegerValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L44">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_IntegerValue" data-uid="LogicForge.Variables.VariableValue.IntegerValue">IntegerValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for Integer values.&quot;)]
+public int IntegerValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_StringValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.StringValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L49">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_StringValue" data-uid="LogicForge.Variables.VariableValue.StringValue">StringValue</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for String values.&quot;)]
+public string StringValue</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_Type.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.Type%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L40">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_Type" data-uid="LogicForge.Variables.VariableValue.Type">Type</h4>
+  <div class="markdown level1 summary"><p>The active type of data this variable currently holds.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public VariableType Type</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Variables.VariableType.html">VariableType</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_Vector2Value.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.Vector2Value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L55">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_Vector2Value" data-uid="LogicForge.Variables.VariableValue.Vector2Value">Vector2Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for Vector2 values.&quot;)]
+public Vector2 Vector2Value</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector2</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_Vector3Value.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.Vector3Value%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L58">View Source</a>
+  </span>
+  <h4 id="LogicForge_Variables_VariableValue_Vector3Value" data-uid="LogicForge.Variables.VariableValue.Vector3Value">Vector3Value</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[Tooltip(&quot;Storage for Vector3 values.&quot;)]
+public Vector3 Vector3Value</code></pre>
+  </div>
+  <h5 class="fieldValue">Field Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_Equals_LogicForge_Variables_VariableValue_.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.Equals(LogicForge.Variables.VariableValue)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L135">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_Equals_" data-uid="LogicForge.Variables.VariableValue.Equals*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_Equals_LogicForge_Variables_VariableValue_" data-uid="LogicForge.Variables.VariableValue.Equals(LogicForge.Variables.VariableValue)">Equals(VariableValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Equals(VariableValue other)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Variables.VariableValue.html">VariableValue</a></td>
+        <td><span class="parametername">other</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_Equals_System_Object_.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.Equals(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L130">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_Equals_" data-uid="LogicForge.Variables.VariableValue.Equals*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_Equals_System_Object_" data-uid="LogicForge.Variables.VariableValue.Equals(System.Object)">Equals(object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.Equals(object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_GetHashCode.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.GetHashCode%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L152">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_GetHashCode_" data-uid="LogicForge.Variables.VariableValue.GetHashCode*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_GetHashCode" data-uid="LogicForge.Variables.VariableValue.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.GetHashCode()</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_GetValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.GetValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L67">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_GetValue_" data-uid="LogicForge.Variables.VariableValue.GetValue*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_GetValue" data-uid="LogicForge.Variables.VariableValue.GetValue">GetValue()</h4>
+  <div class="markdown level1 summary"><p>Retrieves the active value boxed as a generic object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object GetValue()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><p>The value corresponding to <a class="xref" href="LogicForge.Variables.VariableValue.html#LogicForge_Variables_VariableValue_Type">Type</a>, or null if the type is not supported/initialized.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_SetValue_System_Object_.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.SetValue(System.Object)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L90">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_SetValue_" data-uid="LogicForge.Variables.VariableValue.SetValue*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_SetValue_System_Object_" data-uid="LogicForge.Variables.VariableValue.SetValue(System.Object)">SetValue(object)</h4>
+  <div class="markdown level1 summary"><p>Sets the internal value based on the current <a class="xref" href="LogicForge.Variables.VariableValue.html#LogicForge_Variables_VariableValue_Type">Type</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetValue(object val)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">object</span></td>
+        <td><span class="parametername">val</span></td>
+        <td><p>The value to store.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="LogicForge_Variables_VariableValue_SetValue_System_Object__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>Attempts to convert numeric types safely (e.g., double to float) to avoid <span class="xref">System.InvalidCastException</span>.
+If <code class="paramref">val</code> is null, the operation is ignored.</p>
+</div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_ToString.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.ToString%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L173">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_ToString_" data-uid="LogicForge.Variables.VariableValue.ToString*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_ToString" data-uid="LogicForge.Variables.VariableValue.ToString">ToString()</h4>
+  <div class="markdown level1 summary"><p>Returns a user-friendly string representation of the current value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.ValueType.ToString()</span></div>
+  <h3 id="operators">Operators
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_op_Equality_LogicForge_Variables_VariableValue_LogicForge_Variables_VariableValue_.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.op_Equality(LogicForge.Variables.VariableValue%2CLogicForge.Variables.VariableValue)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L127">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_op_Equality_" data-uid="LogicForge.Variables.VariableValue.op_Equality*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_op_Equality_LogicForge_Variables_VariableValue_LogicForge_Variables_VariableValue_" data-uid="LogicForge.Variables.VariableValue.op_Equality(LogicForge.Variables.VariableValue,LogicForge.Variables.VariableValue)">operator ==(VariableValue, VariableValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator ==(VariableValue left, VariableValue right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Variables.VariableValue.html">VariableValue</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LogicForge.Variables.VariableValue.html">VariableValue</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue_op_Inequality_LogicForge_Variables_VariableValue_LogicForge_Variables_VariableValue_.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue.op_Inequality(LogicForge.Variables.VariableValue%2CLogicForge.Variables.VariableValue)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L128">View Source</a>
+  </span>
+  <a id="LogicForge_Variables_VariableValue_op_Inequality_" data-uid="LogicForge.Variables.VariableValue.op_Inequality*"></a>
+  <h4 id="LogicForge_Variables_VariableValue_op_Inequality_LogicForge_Variables_VariableValue_LogicForge_Variables_VariableValue_" data-uid="LogicForge.Variables.VariableValue.op_Inequality(LogicForge.Variables.VariableValue,LogicForge.Variables.VariableValue)">operator !=(VariableValue, VariableValue)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool operator !=(VariableValue left, VariableValue right)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Variables.VariableValue.html">VariableValue</a></td>
+        <td><span class="parametername">left</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="LogicForge.Variables.VariableValue.html">VariableValue</a></td>
+        <td><span class="parametername">right</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_Variables_VariableValue.md&amp;value=---%0Auid%3A%20LogicForge.Variables.VariableValue%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/Variables/VariableValue.cs/#L34" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      LogicForge documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

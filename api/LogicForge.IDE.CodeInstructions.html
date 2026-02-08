@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class CodeInstructions | LogicForge documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class CodeInstructions | LogicForge documentation ">
+    
+    <meta name="description" content="Manages a specific collection of visual instruction blocks (e.g., the &amp;quot;Main&amp;quot; block or a &amp;quot;Loop&amp;quot; body).">
+      <link rel="shortcut icon" href="../public/favicon.svg">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../public/logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first=First data-prev=Previous data-next=Next data-last=Last></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="LogicForge.IDE.CodeInstructions">
+
+
+
+  <h1 id="LogicForge_IDE_CodeInstructions" data-uid="LogicForge.IDE.CodeInstructions" class="text-break">Class CodeInstructions</h1>
+  <div class="markdown level0 summary"><p>Manages a specific collection of visual instruction blocks (e.g., the &quot;Main&quot; block or a &quot;Loop&quot; body).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><span class="xref">Object</span></div>
+    <div class="level2"><span class="xref">Component</span></div>
+    <div class="level3"><span class="xref">Behaviour</span></div>
+    <div class="level4"><span class="xref">MonoBehaviour</span></div>
+    <div class="level5"><span class="xref">CodeInstructions</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="LogicForge.html">LogicForge</a>.<a class="xref" href="LogicForge.IDE.html">IDE</a></h6>
+  <h6><strong>Assembly</strong>: LogicForge.dll</h6>
+  <h5 id="LogicForge_IDE_CodeInstructions_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class CodeInstructions : MonoBehaviour</code></pre>
+  </div>
+  <h5 id="LogicForge_IDE_CodeInstructions_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>This component synchronizes the visual hierarchy (Unity UI transforms) with the logical data list
+(<a class="xref" href="LogicForge.IDE.CodeInstructions.html#LogicForge_IDE_CodeInstructions_InstructionBundles">InstructionBundles</a>). It handles the insertion of new instructions,
+placeholder visualization during drag-and-drop, and order updates.</p>
+</div>
+  <h3 id="properties">Properties
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_InstructionBundles.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.InstructionBundles%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L22">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_InstructionBundles_" data-uid="LogicForge.IDE.CodeInstructions.InstructionBundles*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_InstructionBundles" data-uid="LogicForge.IDE.CodeInstructions.InstructionBundles">InstructionBundles</h4>
+  <div class="markdown level1 summary"><p>The read-only list of instructions currently active in this container, ordered by execution sequence.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;InstructionBundle&gt; InstructionBundles { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">List</span>&lt;<a class="xref" href="LogicForge.Bundles.InstructionBundle.html">InstructionBundle</a>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_Locked.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.Locked%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L27">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_Locked_" data-uid="LogicForge.IDE.CodeInstructions.Locked*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_Locked" data-uid="LogicForge.IDE.CodeInstructions.Locked">Locked</h4>
+  <div class="markdown level1 summary"><p>Indicates whether this specific editor area is locked from interaction.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Locked { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+</h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_AddInstruction_LogicForge_Bundles_InstructionBundle_System_Int32_.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.AddInstruction(LogicForge.Bundles.InstructionBundle%2CSystem.Int32)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L57">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_AddInstruction_" data-uid="LogicForge.IDE.CodeInstructions.AddInstruction*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_AddInstruction_LogicForge_Bundles_InstructionBundle_System_Int32_" data-uid="LogicForge.IDE.CodeInstructions.AddInstruction(LogicForge.Bundles.InstructionBundle,System.Int32)">AddInstruction(InstructionBundle, int)</h4>
+  <div class="markdown level1 summary"><p>Instantiates a new instruction prefab into the UI container and registers necessary event listeners
+(Remove, Reorder).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddInstruction(InstructionBundle prefab, int index = -1)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Bundles.InstructionBundle.html">InstructionBundle</a></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>The instruction prefab to spawn.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">index</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_Clean.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.Clean%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L189">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_Clean_" data-uid="LogicForge.IDE.CodeInstructions.Clean*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_Clean" data-uid="LogicForge.IDE.CodeInstructions.Clean">Clean()</h4>
+  <div class="markdown level1 summary"><p>Destroys all visual instructions and clears the internal list.
+Used by the 'Clean' button or system reset.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clean()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_ClearPlaceholder.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.ClearPlaceholder%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L165">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_ClearPlaceholder_" data-uid="LogicForge.IDE.CodeInstructions.ClearPlaceholder*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_ClearPlaceholder" data-uid="LogicForge.IDE.CodeInstructions.ClearPlaceholder">ClearPlaceholder()</h4>
+  <div class="markdown level1 summary"><p>Removes the temporary placeholder from the UI.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ClearPlaceholder()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_GetInsertionIndex_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.GetInsertionIndex(UnityEngine.Vector3)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L100">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_GetInsertionIndex_" data-uid="LogicForge.IDE.CodeInstructions.GetInsertionIndex*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_GetInsertionIndex_UnityEngine_Vector3_" data-uid="LogicForge.IDE.CodeInstructions.GetInsertionIndex(UnityEngine.Vector3)">GetInsertionIndex(Vector3)</h4>
+  <div class="markdown level1 summary"><p>Calculates the index where an item should be inserted based on the mouse's world position.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int GetInsertionIndex(Vector3 worldPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">worldPosition</span></td>
+        <td><p>The cursor position in world space.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><p>The valid sibling index for insertion.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_Lock_System_Boolean_.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.Lock(System.Boolean)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L176">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_Lock_" data-uid="LogicForge.IDE.CodeInstructions.Lock*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_Lock_System_Boolean_" data-uid="LogicForge.IDE.CodeInstructions.Lock(System.Boolean)">Lock(bool)</h4>
+  <div class="markdown level1 summary"><p>Locks or unlocks all editor interactions (UI buttons and instruction spawning).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Lock(bool locked)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">locked</span></td>
+        <td><p>True to lock, false to unlock.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions_ShowPlaceholder_LogicForge_Bundles_InstructionBundle_UnityEngine_Vector3_.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions.ShowPlaceholder(LogicForge.Bundles.InstructionBundle%2CUnityEngine.Vector3)%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Edit this page</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L137">View Source</a>
+  </span>
+  <a id="LogicForge_IDE_CodeInstructions_ShowPlaceholder_" data-uid="LogicForge.IDE.CodeInstructions.ShowPlaceholder*"></a>
+  <h4 id="LogicForge_IDE_CodeInstructions_ShowPlaceholder_LogicForge_Bundles_InstructionBundle_UnityEngine_Vector3_" data-uid="LogicForge.IDE.CodeInstructions.ShowPlaceholder(LogicForge.Bundles.InstructionBundle,UnityEngine.Vector3)">ShowPlaceholder(InstructionBundle, Vector3)</h4>
+  <div class="markdown level1 summary"><p>Displays a visual placeholder (blank space) in the list to indicate where an item will be dropped.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void ShowPlaceholder(InstructionBundle prefab, Vector3 worldPosition)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="LogicForge.Bundles.InstructionBundle.html">InstructionBundle</a></td>
+        <td><span class="parametername">prefab</span></td>
+        <td><p>The prefab being dragged (used to size the placeholder).</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Vector3</span></td>
+        <td><span class="parametername">worldPosition</span></td>
+        <td><p>The current cursor position.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/vitorfgd/visual-coding-game/new/main/apiSpec/new?filename=LogicForge_IDE_CodeInstructions.md&amp;value=---%0Auid%3A%20LogicForge.IDE.CodeInstructions%0Asummary%3A%20&#39;*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax&#39;%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Edit this page</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/vitorfgd/visual-coding-game/blob/main/Assets/LogicForge/Scripts/IDE/CodeInstructions.cs/#L17" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      LogicForge documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
